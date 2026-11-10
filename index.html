@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>An Nhiên Cố Đô — Nến thơm &amp; Tinh dầu</title>
+<meta name="description" content="An Nhiên Cố Đô — Nến thơm, tinh dầu cho mọi không gian.">
+<!--
+  Built from Figma file mlyPCBHpJtyFaoOEDdEE1a, group "Landing page" (node 146:2).
+  Canvas: 1920 x 6480 = six 1920 x 1080 sections, stacked in Figma Y order:
+    y=0    welcome (thanks) 107:299 | y=1080 first sight 107:339 | y=2160 danh mục 174:52
+    y=3240 combo 174:77 | y=4320 combo 2 174:96 | y=5400 footer 107:383
+  Layout: each .section is a scaling canvas — sizes use cqw units
+  (1cqw = 1% of section width = 19.2px at the 1920px design width),
+  so Figma px = cqw value x 19.2. Colours/fonts: see :root in styles.css.
+  The "do not touch" group is a draft and is NOT used anywhere here.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@700&family=Alex+Brush&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+<!-- ===== Section 1 · WELCOME / thanks (107:299) — Figma y=0 ===== -->
+<section class="section welcome" id="welcome" data-node-id="107:299">
+  <img class="welcome-bg" id="welcomeBg" src="assets/welcome-bg.jpg" alt="">
+  <div class="welcome-shade"></div>
+  <img class="welcome-line" src="assets/line-white.svg" alt="">
+  <div class="welcome-text">
+    <h1 class="welcome-title">An Nhiên Cố Đô</h1>
+    <p class="welcome-body">Xin chào mừng bạn tới với Cố Đô chúng tôi. Chúc bạn có khoảng thời gian thư giãn nhất cùng với sản phẩm hương thơm tự nhiên bên gia đình và người thân!</p>
+  </div>
+  <button class="welcome-arrow prev" id="welcomePrev" aria-label="Ảnh trước"></button>
+  <button class="welcome-arrow next" id="welcomeNext" aria-label="Ảnh sau"></button>
+  <img class="welcome-arrows-img" src="assets/welcome-arrows.svg" alt="" aria-hidden="true">
+  <div class="welcome-dots" id="welcomeDots"><span class="on"></span><span></span><span></span></div>
+  <img class="welcome-music" src="assets/welcome-music.png" alt="" aria-hidden="true">
+</section>
+
+<!-- ===== Section 2 · FIRST SIGHT (107:339) — Figma y=1080 ===== -->
+<section class="section first-sight" id="san-pham" data-node-id="107:339">
+  <h2 class="fs-heading">Sản phẩm của chúng tôi</h2>
+  <img class="line fs-line" src="assets/line-dark.svg" alt="">
+  <figure class="fs-img fs-left"><img src="assets/hero-left.png" alt="Nến cốc nhám"></figure>
+  <figure class="fs-img fs-mid-top"><img src="assets/hero-mid-top.png" alt="Combo 8 mùi hương"></figure>
+  <figure class="fs-img fs-mid-bot"><img src="assets/hero-mid-bottom.png" alt="Các cốc nến nhiều màu"></figure>
+  <figure class="fs-img fs-right"><img src="assets/hero-right.png" alt="Nến cốc sứ"></figure>
+  <span class="fs-label fs-label-left">Nến cốc nhám</span>
+  <span class="fs-label fs-label-right">Nến cốc sứ</span>
+  <span class="fs-label fs-label-mid">Combo 8 mùi hương</span>
+</section>
+
+<!-- ===== Section 3 · DANH MỤC (174:52) — Figma y=2160 ===== -->
+<section class="section danh-muc" id="danh-muc" data-node-id="174:52">
+  <h2 class="dm-heading">DANH MỤC SẢN PHẨM</h2>
+  <img class="line dm-line" src="assets/line-dark.svg" alt="">
+  <div class="dm-cards">
+    <button class="dm-card dm-1" data-modal="gom" aria-haspopup="dialog" data-node-id="174:57">
+      <span class="dm-img"><img src="assets/cat-gom.png" alt="Cốc nến gốm"></span>
+      <span class="dm-band"></span><span class="dm-name">Cốc nến gốm</span>
+    </button>
+    <div class="dm-card dm-2" data-node-id="174:62">
+      <span class="dm-img"><img src="assets/cat-nham.png" alt="Cốc nến nhám"></span>
+      <span class="dm-band"></span><span class="dm-name">Cốc nến nhám</span>
+    </div>
+    <button class="dm-card dm-3" data-modal="oil" aria-haspopup="dialog" data-node-id="174:67">
+      <span class="dm-img dm-img-oil"><img src="assets/cat-tinhdau.png" alt="Tinh dầu"></span>
+      <span class="dm-band"></span><span class="dm-name">Tinh dầu</span>
+    </button>
+    <div class="dm-card dm-4" data-node-id="174:72">
+      <span class="dm-img dm-img-cao"><img src="assets/cat-caotram.png" alt="Cao tràm"></span>
+      <span class="dm-band"></span><span class="dm-name">Cao tràm</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Section 4 · COMBO VÀ KHUYẾN MÃI (174:77) — Figma y=3240 ===== -->
+<section class="section combo1" id="combo" data-node-id="174:77">
+  <h2 class="c-heading">COMBO VÀ KHYẾN MÃI</h2>
+  <img class="line c-line" src="assets/line-dark.svg" alt="">
+  <p class="c-sub">Quà tặng tinh tế, gửi trọn tâm tình</p>
+  <div class="c1-panel"></div>
+  <div class="c1-collage" aria-hidden="true">
+    <img class="c1-main" src="assets/combo-photo.jpg" alt="">
+    <img class="poly poly4" src="assets/polygon4.png" alt="">
+    <img class="poly poly5" src="assets/polygon5.png" alt="">
+    <img class="poly poly6" src="assets/polygon6.png" alt="">
+  </div>
+  <div class="c1-text">
+    <h3>Trao hương thơm, gửi lời quan tâm</h3>
+    <p>Những bộ quà kết hợp nến thơm và tinh dầu từ An Nhiên Cố Đô thay bạn gửi lời yêu thương đến người thân, lời tri ân đến thầy cô và những người bạn trân quý.</p>
+    <p>Các combo được giới thiệu quanh năm, cùng ưu đãi vào những dịp đặc biệt như 20/10, 20/11 và 2/9. Khám phá bộ quà phù hợp để mỗi món quà đều mang dấu ấn của sự quan tâm.</p>
+    <p>Dù là quà tặng người thân, lời cảm ơn thầy cô hay món quà cho một dịp đặc biệt, bạn luôn có thể tìm thấy lựa chọn phù hợp trong các combo được giới thiệu quanh năm.</p>
+  </div>
+  <a class="cta c1-cta" href="#combo-hien-co">Khám phá các combo →</a>
+</section>
+
+<!-- ===== Section 5 · CÁC COMBO HIỆN CÓ (174:96) — Figma y=4320 ===== -->
+<section class="section combo2" id="combo-hien-co" data-node-id="174:96">
+  <div class="c2-panel"></div>
+  <h2 class="c-heading">CÁC COMBO HIỆN CÓ</h2>
+  <img class="line c-line" src="assets/line-dark.svg" alt="">
+  <p class="c-sub">Quà tặng tinh tế, gửi trọn tâm tình</p>
+  <figure class="c2-img c2-left"><img src="assets/combo-photo.jpg" alt="Combo quà tặng An Nhiên Cố Đô"></figure>
+  <figure class="c2-img c2-right"><img src="assets/combo2-photo2.jpg" alt="Combo nến thơm Tràm"></figure>
+  <a class="cta c2-cta-left" href="#combo-hien-co">Xem chi tiết combo →</a>
+  <a class="cta c2-cta-right" href="#combo-hien-co">Xem chi tiết combo →</a>
+</section>
+
+<!-- ===== Section 6 · FOOTER / Chân trang (107:383) — Figma y=5400 ===== -->
+<footer class="section footer" data-node-id="107:383">
+  <img class="f-watermark" src="assets/logo.png" alt="" aria-hidden="true">
+  <p class="f-hotline">Hotline: 039.xxx.xxxx</p>
+  <div class="f-col f-intro">
+    <h4>GIỚI THIỆU</h4>
+    <p>An Nhiên Cố Đô là nơi lưu giữ và tôn vinh những giá trị văn hóa truyền thống. Qua từng sản phẩm, chúng tôi mong muốn trao gửi đến bạn một không gian tĩnh lặng, mang lại sự thư thái giữa nhịp sống hiện đại.</p>
+  </div>
+  <div class="f-col f-contact">
+    <h4>THÔNG TIN LIÊN HỆ</h4>
+    <ul>
+      <li><strong>Địa chỉ</strong>: Số 6, Ngành 2/20, Phường Hoàng Liệt, Thành phố Hà Nội, Việt Nam</li>
+      <li><strong>Điện thoại: </strong>096.424.2256</li>
+      <li><strong>Email</strong>: annhiencodo.mst@gmail.com</li>
+    </ul>
+  </div>
+  <div class="f-col f-legal">
+    <h4>PHÁP LÝ &amp; TƯ VẤN</h4>
+    <ul>
+      <li>Tầm nhìn và sứ mệnh</li>
+      <li>Câu chuyện khởi nguồn</li>
+      <li>Các chính sách</li>
+    </ul>
+  </div>
+  <div class="f-col f-fast">
+    <h4>FAST SCROLL</h4>
+    <ul>
+      <li><a href="#welcome">Trang chủ</a></li>
+      <li><a href="#san-pham">Sản phẩm của chúng tôi</a></li>
+      <li><a href="#danh-muc">Danh mục sản phẩm</a></li>
+    </ul>
+  </div>
+  <div class="f-certs">
+    <span class="cert cert-bct"><img src="assets/cert-bocongthuong.png" alt="Đã thông báo Bộ Công Thương"></span>
+    <span class="cert cert-dmca"><img src="assets/cert-rect.png" alt="DMCA Protected"></span>
+  </div>
+  <div class="f-socials">
+    <img src="assets/icon-fb.svg" alt="Facebook">
+    <img src="assets/icon-gplus.svg" alt="Google Plus">
+  </div>
+  <p class="f-copy">© 2026 Bản quyền thuộc về An Nhiên Cố Đô. Mọi quyền được bảo lưu.</p>
+</footer>
+</div><!-- /.page -->
+
+<!-- ===== POPUP · click nến gốm (128:53) ===== -->
+<div class="modal-backdrop" id="modal-gom" hidden role="dialog" aria-modal="true" aria-labelledby="gomTitle">
+  <div class="modal-panel">
+    <button class="modal-close" data-close aria-label="Đóng"><img src="assets/icon-close.svg" alt=""></button>
+    <img class="modal-main-img" id="gomMain" src="assets/gom-main.jpg" alt="Cốc nến gốm hương Sứ">
+    <h3 class="modal-title" id="gomTitle">Cốc nến gốm hương Sứ</h3>
+    <p class="modal-sub">Cốc nến làm từ gốm và mùi hương Sứ tự nhiên</p>
+    <div class="modal-pills">
+      <button class="pill">170g</button>
+      <button class="pill selected">240g</button>
+    </div>
+    <div class="modal-thumbs" data-main="gomMain">
+      <button class="thumb"><img src="assets/gom-1.jpg" alt="Hương khác 1"></button>
+      <button class="thumb"><img src="assets/gom-2.jpg" alt="Hương Nhài"></button>
+      <button class="thumb"><img src="assets/gom-3.jpg" alt="Hương khác 3"></button>
+      <span class="thumb thumb-blur"><img src="assets/gom-4.jpg" alt=""></span>
+    </div>
+    <div class="modal-track"><span></span></div>
+  </div>
+</div>
+
+<!-- ===== POPUP · click tinh dầu (114:416) ===== -->
+<div class="modal-backdrop" id="modal-oil" hidden role="dialog" aria-modal="true" aria-labelledby="oilTitle">
+  <div class="modal-panel">
+    <button class="modal-close" data-close aria-label="Đóng"><img src="assets/icon-close.svg" alt=""></button>
+    <img class="modal-main-img" id="oilMain" src="assets/oil-main.jpg" alt="Tinh dầu Đinh hương">
+    <h3 class="modal-title" id="oilTitle">Tinh dầu Đinh hương</h3>
+    <p class="modal-sub">Tinh dầu mùi gỗ Đinh hương quý hiếm.</p>
+    <div class="modal-pills">
+      <button class="pill selected">50g</button>
+    </div>
+    <div class="modal-thumbs" data-main="oilMain">
+      <button class="thumb"><img src="assets/oil-1.jpg" alt="Tinh dầu khác 1"></button>
+      <button class="thumb"><img src="assets/oil-2.jpg" alt="Tinh dầu khác 2"></button>
+      <button class="thumb"><img src="assets/oil-3.jpg" alt="Tinh dầu khác 3"></button>
+      <span class="thumb thumb-blur"><img src="assets/oil-4.jpg" alt=""></span>
+    </div>
+    <div class="modal-track"><span></span></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
